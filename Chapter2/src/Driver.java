@@ -18,5 +18,28 @@ public class Driver {
          
         System.out.println("List after removal of elements");
         llist.print();
+        
+        kthFromLast llist2 = new kthFromLast();
+        llist2.insertAtBeggining(20);
+        llist2.insertAtBeggining(13);
+        llist2.insertAtBeggining(13);
+        llist2.insertAtBeggining(11);
+        llist2.insertAtBeggining(11);
+        llist2.insertAtBeggining(11);
+        System.out.println();
+        llist2.printNthFromLast(2);
+        
+        deleteMiddle llist3 = new deleteMiddle();
+        llist3.insertAtBeggining(20);
+        llist3.insertAtBeggining(13);
+        llist3.insertAtBeggining(13);
+        llist3.insertAtBeggining(11);
+        llist3.insertAtBeggining(11);
+        llist3.insertAtBeggining(11);
+        System.out.println();
+        llist3.deleteNode(2);
+        System.out.println();
+        llist3.print();
+        
 	}
 }
