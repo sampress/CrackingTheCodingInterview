@@ -75,6 +75,20 @@ public class Driver {
             }
         }
         
+        loopDetection llist7 = new loopDetection();
+        llist7.insertAtBeggining(1);
+        llist7.insertAtBeggining(2);
+        llist7.insertAtBeggining(3);
+        llist7.insertAtBeggining(4);
+        llist7.insertAtBeggining(5);
+        
+        llist7.head.next.next.next.next.next = llist7.head;
+        
+        Node loop = llist7.detectLoop();
+        if(loop == null)
+        	System.out.println("No loop");
+        else
+        	System.out.println("Found loop : " + loop.data);
         
         
         
